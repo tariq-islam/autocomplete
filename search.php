@@ -7,6 +7,7 @@ $q = strtolower($_GET["term"]);
 // remove slashes if they were magically added
 if (get_magic_quotes_gpc()) $q = stripslashes($q);
 
+// TODO: Build this array of $items from the output of the conversion from the json file (basically read in the string of associative arrays post-conversion)
 $items = array(
 "Great Bittern"=>"Botaurus stellaris",
 "Little Grebe"=>"Tachybaptus ruficollis",
