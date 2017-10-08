@@ -14,9 +14,10 @@ if (get_magic_quotes_gpc()) $q = stripslashes($q);
 $items = json_decode(file_get_contents("products.json"), true);
 
 $result = array();
+$zero = 0;
 foreach ($items as $key=>$value) {
 	if (strpos(strtolower($value["name"]), $q) !== false) {
-		array_push($result, array("id"=>$value["name"], "label"=>$value["name"], "value" => strip_tags($value["name"])));
+		array_push($result, array("id"=>$value["category"][$zero]["name"], "label"=>$value["name"], "value" => strip_tags($value["name"])));
 	}
 	if (count($result) > 11)
 		break;
