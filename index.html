@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Autocomplete - Remote datasource</title>
+  <title>Your Best Buys Autocomplete App</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <style>
@@ -20,7 +20,7 @@
       $( "#log" ).scrollTop( 0 );
     }
  
-    $( "#birds" ).autocomplete({
+    $( "#products" ).autocomplete({
       source: "search.php",
       minLength: 2,
       select: function( event, ui ) {
@@ -31,15 +31,15 @@
   </script>
 </head>
 <body>
- 
+<h1>Your Best Buys Autocomplete Demo</h1>
 <div class="ui-widget">
-  <label for="birds">Product Search: </label>
-  <input id="birds">
+  <h3><label for="products">Product Search: </label></h3>
+  <input id="products" style="width: 700px">
 </div>
  
 <div class="ui-widget" style="margin-top:2em; font-family:Arial">
-  Result:
-  <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+  <h3>Result:</h3>
+  <div id="log" style="height: 200px; width: 900px; overflow: auto;" class="ui-widget-content"></div>
 </div>
  
  
